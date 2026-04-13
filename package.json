@@ -1,0 +1,32 @@
+{
+  "name": "new-siva-studio-services",
+  "version": "1.0.0",
+  "description": "Siva Studio serverless backend on AWS Lambda",
+  "private": true,
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint 'src/**/*.ts' 'tests/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' 'tests/**/*.ts' --fix",
+    "deploy": "serverless deploy",
+    "deploy:prod": "serverless deploy --stage prod",
+    "remove": "serverless remove"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "esbuild": "^0.23.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "serverless": "^4.0.0",
+    "serverless-esbuild": "^1.52.1",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.0"
+  }
+}

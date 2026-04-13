@@ -1,0 +1,45 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: balavirtualworld
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: new-siva-studio-services
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: new-siva-studio-services
+
+plugins:
+  - serverless-esbuild
+
+custom:
+  esbuild:
+    bundle: true
+    minify: false
+    sourcemap: true
+    target: node20
+    platform: node
+    concurrency: 10
+    exclude:
+      - aws-sdk
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
+  environment:
+    STAGE: ${self:provider.stage}
+    AWS_REGION: ${self:provider.region}
+    SERVICE_NAME: ${self:service}
+  # Uncomment to easily set up a custom domain. Read the docs for more details:
+  # https://www.serverless.com/framework/docs/providers/aws/guide/domains
+  # domain: api.example.com
+
+package:
+  individually: true
+
+functions:
+  hello:
+    handler: src/handlers/hello.handler
+    description: Example hello endpoint
+    events:
+      - httpApi:
+          path: /
+          method: get
