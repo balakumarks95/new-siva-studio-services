@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "triggerSource": "CreateAuthChallenge_Authentication",
+  "region": "ap-south-1",
+  "userPoolId": "us-east-1_Example",
+  "userName": "jdoe",
+  "callerContext": {},
+  "request": {
+    "userAttributes": {
+      "email": "jdoe@example.com",
+      "phone_number": "+15555550123"
+    }
+  },
+  "response": {}
+}

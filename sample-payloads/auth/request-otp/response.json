@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "data": {
+    "challenge": "CUSTOM_CHALLENGE",
+    "session": "<SESSION_STRING>"
+  }
+}

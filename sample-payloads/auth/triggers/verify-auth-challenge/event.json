@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "triggerSource": "VerifyAuthChallengeResponse_Authentication",
+  "region": "ap-south-1",
+  "userPoolId": "us-east-1_Example",
+  "userName": "jdoe",
+  "callerContext": {},
+  "request": {
+    "privateChallengeParameters": {
+      "answer": "123456"
+    },
+    "challengeAnswer": "123456"
+  },
+  "response": {}
+}

@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "triggerSource": "PreSignUp_SignUp",
+  "region": "ap-south-1",
+  "userPoolId": "us-east-1_Example",
+  "userName": "newuser",
+  "callerContext": {},
+  "request": {
+    "userAttributes": {
+      "custom:role": "admin",
+      "email": "admin@example.com"
+    }
+  },
+  "response": {}
+}

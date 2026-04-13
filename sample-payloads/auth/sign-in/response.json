@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "auth": {
+      "AccessToken": "<ACCESS_TOKEN>",
+      "IdToken": "<ID_TOKEN>",
+      "RefreshToken": "<REFRESH_TOKEN>",
+      "ExpiresIn": 3600,
+      "TokenType": "Bearer"
+    }
+  }
+}
