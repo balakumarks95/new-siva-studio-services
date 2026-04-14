@@ -8,7 +8,7 @@ const getEnv = (key: string, fallback?: string): string => {
 
 const config = {
   stage: getEnv('STAGE', 'dev'),
-  awsRegion: getEnv('AWS_REGION', 'us-east-1'),
+  awsRegion: getEnv('AWS_REGION', 'ap-south-1'),
   serviceName: getEnv('SERVICE_NAME', 'new-siva-studio-services'),
 } as const;
 

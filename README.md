@@ -29,11 +29,11 @@ serverless deploy
 After running deploy, you should see output similar to:
 
 ```
-Deploying "serverless-http-api" to stage "dev" (us-east-1)
+Deploying "serverless-http-api" to stage "dev" (ap-south-1)
 
 ✔ Service deployed to stack serverless-http-api-dev (91s)
 
-endpoint: GET - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/
+endpoint: GET - https://xxxxxxxxxx.execute-api.ap-south-1.amazonaws.com/
 functions:
   hello: serverless-http-api-dev-hello (1.6 kB)
 ```
@@ -45,7 +45,7 @@ _Note_: In current form, after deployment, your API is public and can be invoked
 After successful deployment, you can call the created application via HTTP:
 
 ```
-curl https://xxxxxxx.execute-api.us-east-1.amazonaws.com/
+curl https://xxxxxxx.execute-api.ap-south-1.amazonaws.com/
 ```
 
 Which should result in response similar to:
