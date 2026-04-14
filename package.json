@@ -14,11 +14,7 @@
     "deploy:prod": "serverless deploy --stage prod",
     "remove": "serverless remove"
   },
-  "dependencies": {
-    "@aws-sdk/client-cognito-identity-provider": "^3.520.0",
-    "@aws-sdk/client-sns": "^3.520.0",
-    "@aws-sdk/client-ses": "^3.520.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/aws-lambda": "^8.10.145",
     "@types/jest": "^29.5.12",
